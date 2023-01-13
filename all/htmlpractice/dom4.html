@@ -1,0 +1,59 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(){
+            var para=document.getElementsByTagName('p');
+            // para[0].style.color='black'
+            // para[0].style.backgroundColor='orange'
+            // para[1].style.color='black'
+            // para[1].style.backgroundColor='white'
+            // para[2].style.color='black'
+            // para[2].style.backgroundColor='green'
+            for(let i=0;i<para.length;i++){
+                para[i].style.color='green'
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>This is Paragraph1</p>
+    <p>This is Paragraph2</p>
+    <p>This is Paragraph3</p>
+    <br>
+    <button onclick="fun()">click</button>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(){
+            var para=document.getElementsByClassName('mypara');
+            for(let i=0;i<para.length;i++){
+                para[i].style.color='red'
+                para[i].style.backgroundColor='yellow'
+            }
+        }
+    </script>
+</head>
+<body>
+    <p class="mypara">This is Paragraph1</p>
+    <p>This is Paragraph2</p>
+    <p class="mypara">This is Paragraph3</p>
+    <p>This is Paragraph1</p>
+    <p class="mypara">This is Paragraph2</p>
+    <p>This is Paragraph3</p>
+    <br>
+    <button onclick="fun()">click</button>
+</body>
+</html>

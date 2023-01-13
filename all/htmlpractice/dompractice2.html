@@ -1,0 +1,47 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">Full Name:</h1>
+    <input type="text" id="first" placeholder="Enter First Name"><br><br>
+    <input type="text" id="last" placeholder="Enter First Name"><br><br>
+    <button id="btn">Click Me</button>
+    <script>
+        let h1=document.getElementById('h1');
+        document.getElementById('btn').onclick=function(){
+        let first=document.getElementById('first').value;
+        let last=document.getElementById('last').value;
+        h1.innerHTML='Full Name:'+first+' '+last;
+        }
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">random no 1 to 100</h1>
+    <button id="btn">Click</button>
+    <script>
+        let h1=document.getElementById('h1');
+        document.getElementById('btn').onclick=function(){
+            let cal=Math.random();
+            cal=cal*100;
+            cal=Math.floor(cal);
+            h1.innerHTML=cal;
+        }
+    </script>
+</body>
+</html> -->

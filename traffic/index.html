@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic-Light</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Traffic-Light</h1>
+    <div id="traffic-light">
+        <div id="red"></div>
+        <div id="yellow"></div>
+        <div id="green"></div>
+    </div>
+    <script>
+         function green(){
+            var red=document.getElementById("red")
+            var green=document.getElementById("green");
+            green.style.backgroundColor="#00ff54";
+            green.style.boxShadow="0px 0px 10px #00ff54,0px 0px 20px #00ff554";
+            red.style.backgroundColor="#000";
+            red.style.boxShadow="none";
+            setTimeout(yellow,2000);
+        }
+         
+        function yellow(){
+            var green=document.getElementById("green");
+            var yellow=document.getElementById("yellow");
+            yellow.style.backgroundColor="yellow";
+            yellow.style.boxShadow="0px 0px 10px yellow,0px 0px 20px yellow";
+            green.style.backgroundColor="#000";
+            green.style.boxShadow="none";
+            setTimeout(red,2000);
+        }
+
+        function red(){
+            var yellow=document.getElementById("yellow");
+            var red=document.getElementById("red");
+            red.style.backgroundColor="red";
+            red.style.boxShadow="0px 0px 10px red,0px 0px 20px red";
+            yellow.style.backgroundColor="#000";
+            yellow.style.boxShadow="none";
+            setTimeout(green,2000);
+        }
+        
+        green()
+
+    </script>
+</body>
+</html>

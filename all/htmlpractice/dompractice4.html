@@ -1,0 +1,50 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">Hello</h1>
+    <button id="red">Red</button>
+    <button id="blue">Blue</button>
+    <script>
+        let h1=document.getElementById('h1');
+        document.getElementById('red').onclick=function(){
+            h1.style.color='red';
+        }
+        document.getElementById('blue').onclick=function(){
+            h1.style.color='blue';
+        }
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1"></h1>
+    <input id="num" type="number" placeholder="Second">
+    <button id="btn">start</button>
+    <script>
+        let h1=document.getElementById('h1');
+        document.getElementById('btn').onclick=function(){
+            let a=document.getElementById('num').value;
+            setInterval(()=>{
+                if(a>=0){
+                    h1.innerHTML=a;
+                }
+                a--;
+            },1000)
+        }
+    </script>
+</body>
+</html>

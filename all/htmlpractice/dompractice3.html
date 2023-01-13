@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">Add Your Name:</h1>
+    <h2 id="h2">Add Your Email:</h2>
+    <input type="text" placeholder="Add Your Name" id="name"><br><br>
+    <input type="text" placeholder="Add Your Email" id="email"><br><br>
+    <button id="btn">Click</button>
+    <script>
+        let h1=document.getElementById('h1')
+        let h2=document.getElementById('h2')
+        document.getElementById('btn').onclick=function(){
+            let name=document.getElementById('name').value;
+            let email=document.getElementById('email').value;
+            h1.innerHTML=name;
+            h2.innerHTML=email;
+        }
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+           display: block;
+           border: 2px solid red;
+           height: 500px;
+           width: 500px;
+           /* background-color: green; */
+           text-align: center;
+           background-image: url(./image/flowers1.jpg);
+           align-items: center;
+           color: blue;
+           line-height: 500px;
+           font-size: 20px;
+           font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">Ajeet</div><br><br>
+    <button id="show">Show</button>
+    <button id="hide">Hide</button>
+    <script>
+        let box=document.getElementById('box')
+        document.getElementById('show').onclick=function(){
+            box.style.display='block';
+        }
+        document.getElementById('hide').onclick=function(){
+            box.style.display='none';
+        }
+    </script>
+</body>
+</html> -->

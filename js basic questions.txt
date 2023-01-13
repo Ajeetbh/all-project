@@ -1,0 +1,79 @@
+Basic Programming using Javascript Coding Problem - 5
+page 2:- Modify an Array Stored in an Object
+
+
+2. find the second largest element from an array
+[1,4,2,6,4,5,2,6,9,7,9]
+second largest value:7
+3. sort and array based on object
+
+	const arr = [
+    {name:'superman'},
+    {name:'black adam'},
+    {name:'shazam'},
+    {name:'batman'}
+]
+
+
+[
+    {name:'batman'}, 
+    {name:'black adam'},
+    {name:'shazam'},
+    {name:'superman'},
+]
+
+4. conver multidimentional array to 1 dimentional array
+
+let nestedArray = [
+ 'nodeep',3,4,5,
+  ['deep'],
+  [
+    ['deeper'], ['deeper'] 
+  ],
+  [
+    [
+      ['deepest'], ['deepest']
+    ],
+    [
+      [
+        ['deepest-est?',
+            ['dddd']
+        ]
+      ]
+    ]
+  ]
+];
+
+[ 'nodeep', 3, 4, 5, 'deep', 'deeper', 'deeper', 'deepest', 'deepest', 'deepest-est?', 'dddd' ]
+
+
+
+*
+**
+***
+****
+*****
+
+
+____*
+___**
+__***
+_****
+*****
+
+
+*****
+****
+***
+**
+*
+
+*
+**
+***
+****
+*****
+****
+***
+**
+*

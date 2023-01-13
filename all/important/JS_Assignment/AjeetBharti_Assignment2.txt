@@ -1,0 +1,315 @@
+//Q1- Build JavaScript Objects
+// var myDog = {
+//     name:'Monty',
+//     legs:4,
+//     tails:1,
+//     friends:['men','police']
+//   };
+//   console.log(myDog)
+
+//Q2- Accessing Object Properties with Dot Notation 
+// var testObj = {
+//     "hat": "ballcap",
+//     "shirt": "jersey",
+//     "shoes": "cleats"
+//   };
+//   var hatValue = testObj.hat;     
+//   var shirtValue = testObj.shirt; 
+//   console.log(hatValue)
+//   console.log(shirtValue)  
+
+//Q3- Accessing Object Properties with Bracket Notation
+// var testObj = {
+//     "an entree": "hamburger",
+//     "my side": "veggies",
+//     "the drink": "water"
+//   };
+//   var entreeValue = testObj['an entree'];  
+//   var drinkValue = testObj['the drink'];   
+
+//Q5-Accessing Object Properties with Variables
+// var testObj = {
+//     12: "Namath",
+//     16: "Montana",
+//     19: "Unitas"
+//   };
+//   var playerNumber=16;       
+//   var player = testObj[playerNumber];   
+//   console.log(player)
+
+//Q6 Updating Object Properties
+// var myDog = {
+//     "name": "Coder",
+//     "legs": 4,
+//     "tails": 1,
+//     "friends": ["freeCodeCamp Campers"]
+//   };
+//   myDog['name']='Happy Coder'
+//   console.log(myDog)
+
+//Q7-Add New Properties to a JavaScript Object
+// var myDog = {
+//     "name": "Happy Coder",
+//     "legs": 4,
+//     "tails": 1,
+//     "friends": ["freeCodeCamp Campers"]
+//   };
+//   myDog.bark='woof'
+//   console.log(myDog)
+  
+//Q8-Delete Properties from a JavaScript Object
+// var myDog = {
+//     "name": "Happy Coder",
+//     "legs": 4,
+//     "tails": 1,
+//     "friends": ["freeCodeCamp Campers"],
+//     "bark": "woof"
+//   };
+//   delete myDog.tails
+// console.log(myDog)
+
+//Q9 Using Objects for Lookups
+// function phoneticLookup(val) {
+//     var result = "";
+//     var lookup={
+//       "alpha":"Adams",
+//       "bravo":"Boston",
+//       "charlie":"Chicago",
+//       "delta":"Denver",
+//       "echo":"Easy",
+//       "foxtrot": "Frank"
+//     }
+//     var result=lookup[val]
+//     return result;
+//   }
+//   console.log(phoneticLookup("charlie"));
+
+//Q10 Testing Objects for Properties
+// var Obj = {
+//     gift: "pony",
+//     pet: "kitten",
+//     bed: "sleigh"
+//   };
+//   function checkObj(checkProp) {
+//     var result = " ";
+//     if (Obj.hasOwnProperty(checkProp)){
+//       result = Obj[checkProp];
+//     } else {
+//       result = "Not Found";
+//     }
+//     return result;
+//   }
+//   console.log(checkObj("gift"));
+
+//Q11 Manipulating Complex Objects
+// var myMusic = [
+//     {
+//       "artist": "Billy Joel",
+//       "title": "Piano Man",
+//       "release_year": 1973,
+//       "formats": [
+//         "CD",
+//         "8T",
+//         "LP"
+//       ],
+//       "gold": true
+//     },
+//     {
+//       'artist':'Joel',
+//       'title':'piano women',
+//       'release_year':2000,
+//       'formats':[
+//         'youtube',
+//         'music'
+//       ],
+//     }
+//   ];
+//   console.log(myMusic)
+
+  
+//Q12- Accessing Nested Objects
+// var myStorage = {
+//     "car": {
+//       "inside": {
+//         "glove box": "maps",
+//         "passenger seat": "crumbs"
+//        },
+//       "outside": {
+//         "trunk": "jack"
+//       }
+//     }
+//   };
+//   var gloveBoxContents = myStorage.car.inside['glove box'];
+//   console.log(gloveBoxContents)
+
+//Q13- Accessing Nested Arrays
+// var myPlants = [
+//     {
+//       type: "flowers",
+//       list: [
+//         "rose",
+//         "tulip",
+//         "dandelion"
+//       ]
+//     },
+//     {
+//       type: "trees",
+//       list: [
+//         "fir",
+//         "pine",
+//         "birch"
+//       ]
+//     }
+//   ];
+//   var secondTree =myPlants[1].list[1];
+//   console.log(secondTree)
+
+//Q15- Iterate with JavaScript While Loops
+// var myArray = [];
+// var i=5;
+// while(i>=0){
+//   myArray.push(i)
+//   i--;
+// }
+// console.log(myArray)
+
+//Q-16 Iterate with JavaScript For Loops
+// var myArray = [];
+// for(var i=1;i<=5;i++){
+//   myArray.push(i);
+// }
+// console.log(myArray)
+
+//Q17- Iterate Odd Numbers With a For Loop
+// var myArray = [];
+// for(var i=1;i<10;i+=2){
+//   myArray.push(i)
+// }
+// console.log(myArray)
+
+//Q18- Count Backwards With a For Loop
+// var myArray = [];
+// for(var i=9;i>0;i-=2){
+//   myArray.push(i)
+// }
+// console.log(myArray)
+
+//Q19-Iterate Through an Array with a For Loop
+// var myArr = [ 2, 3, 4, 5, 6];
+// var total=0
+// for(var i=0;i<myArr.length;i++){
+//   total+=myArr[i];
+// }
+// console.log(total)
+
+//Q21- Nesting for loop
+// function multiplyAll(arr) {
+//     var product = 1;
+//     for(var i=0;i<arr.length;i++){
+//       for(var j=0;j<arr[i].length;j++){
+//         product *=arr[i][j]
+//       }
+//     }
+//     return product;
+// }
+// var result=multiplyAll([[1,2],[3,4],[5,6,7]])
+// console.log(result)
+
+
+//Q23- Profile Lookup
+// var contacts = [
+//          {
+//             "firstName": "Akira",
+//             "lastName": "Laine",
+//             "number": "0543236543",
+//             "likes": ["Pizza", "Coding", "Brownie Points"]
+//         },
+//         {
+//             "firstName": "Harry",
+//             "lastName": "Potter",
+//             "number": "0994372684",
+//             "likes": ["Hogwarts", "Magic", "Hagrid"]
+//         },
+//         {
+//             "firstName": "Sherlock",
+//             "lastName": "Holmes",
+//             "number": "0487345643",
+//             "likes": ["Intriguing Cases", "Violin"]
+//         },
+//         {
+//             "firstName": "Kristian",
+//             "lastName": "Vos",
+//             "number": "unknown",
+//             "likes": ["JavaScript", "Gaming", "Foxes"]
+//         }
+//     ];
+//     function lookUpProfile(name, prop) {
+//       for(var i=0;i<contacts.length;i++){
+//           if(contacts[i].firstName===name){
+//               return contacts[i][prop] || "No such property"; 
+//           }
+//       }
+//       return 'No sach contact'
+//     }
+//     var data=lookUpProfile("Akira", "likes");
+//     console.log(data)    
+   
+//Q24- Generate Random Fractions with JavaScript
+// function randomFraction() {
+//     return Math.random();
+//   }
+//   console.log(randomFraction())
+
+//Q25 generate random whole numbers
+// function randomWholeNum() {
+//      return Math.floor(Math.random()*10);
+//    }
+//      console.log(randomWholeNum())
+
+//Q26 Generate Random Whole Numbers within a Range
+// function randomRange(myMin, myMax) {
+//     return Math.floor(Math.random() *(myMax-myMin+1))+myMin
+//   }
+//   console.log(randomRange(1,10))
+
+//Q27 Use the parseInt Function
+// function convertToInteger(str) {
+//     return parseInt(str)
+// }
+// console.log(convertToInteger("56"));
+
+//Q28 Use the Conditional (Ternary) Operator
+// function checkEqual(a, b) {
+//     return a==b?'Equal':'Not Equal';
+// }
+// console.log(checkEqual(1, 2));
+
+//Q29 Use Multiple Conditional (Ternary) Operators
+// function checkSign(num) {
+//     return num==0? 'zero':num>0?'positive':'negative';
+// }
+// console.log(checkSign(10));
+
+//Q30 Use Recursion to Create a Countdown
+// function countdown(n){
+//     if(n<1){
+//       return [];
+//     }
+//     var countArray=countdown(n-1);
+//         countArray.unshift(n)
+//         return countArray;
+//     }
+//     console.log(countdown(5))
+
+//Q31 Use Recursion to Create a Range of Numbers
+// function rangeOfNumbers(startNum, endNum) {
+//     if (endNum - startNum ==0) {
+//       return [startNum];
+//     } else {
+//       var numbers = rangeOfNumbers(startNum, endNum - 1);
+//       numbers.push(endNum);
+//       return numbers;
+//     }
+//   }
+//   console.log(rangeOfNumbers(1,5))
+    

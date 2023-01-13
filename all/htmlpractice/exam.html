@@ -1,0 +1,41 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <input type="text" id="txt">
+        <ul id="list"> 
+        </ul>
+        <button onclick="addlist()">Click</button>
+        <script>
+            var inputText=document.getElementById('txt');
+            function addlist(){
+                var listNode=document.getElementById('list')
+                textNode=document.createTextNode(inputText.value)
+                liNode=document.createElement('li');
+                liNode.appendChild(textNode);
+                listNode.appendChild(liNode);
+            }
+        </script>
+    </body>
+</html>  -->
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin-top: 240px;
+        }
+        body:hover{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+   <p>click</p>
+</body>
+</html> -->

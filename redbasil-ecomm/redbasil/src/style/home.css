@@ -1,0 +1,31 @@
+.home{
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.homeInfo{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.homeInfo h1{
+    font-weight: 900;
+    padding-bottom: 10px;
+}
+.homeInfo p{
+    color: gray;
+    font-size: 25px;
+}
+
+
+.b span{
+    width: 400px;
+    height: 70px;
+    background-color: red;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}

@@ -1,0 +1,56 @@
+ <!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function fun(){
+            let h1=document.getElementById('h1');
+            let name=document.getElementById('id1').value;
+            h1.innerHTML='First Name: '+name;
+            let h2=document.getElementById('h2');
+            let email=document.getElementById('id2').value;
+            h2.innerHTML="Email: "+email;
+        }
+    </script>
+</head>
+<body>
+    <h1 id="h1">Enter Name</h1>
+    <input type="text" id="id1" placeholder="Enter Name">
+    <h2 id="h2">Enter Email</h2>
+    <input type="text" id="id2" placeholder="Enter Name"></br></br>
+    <button onclick="fun()">Click</button>
+</body>
+</html> -->
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function fun1(){
+            let rd1=document.getElementById('rd1');
+            let rd2=document.getElementById('rd2');
+           if(rd1.checked==true){
+               alert('the game is selected:'+rd1.value);
+           }
+           else if(rd2.checked==true){
+            alert('the game is selected:'+rd2.value);
+           }else{
+               alert('no game is selected')
+           }
+        }
+    </script>
+</head>
+<body>
+    <input type="radio" id="rd1" name="game" value="Chess">Chess</input><br>
+    <input type="radio" id="rd2" name="game" value="Carrom">Carrom</input><br>
+    <button onclick="fun1()">Click</button>
+</body>
+</html> -->

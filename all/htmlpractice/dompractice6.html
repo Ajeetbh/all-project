@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1"></h1>
+    <script>
+        let count=0;
+        setInterval(()=>{
+            count++;
+            document.getElementById('h1').innerHTML=count;
+        },1000)
+    </script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            border: 5px solid black;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div><br><br>
+    <button id="green">Green</button>
+    <button id="red">Red</button>
+    <button id="blue">Blue</button>
+    <script>
+        let box=document.getElementById('box')
+        document.getElementById('green').onclick=function(){
+            box.style.backgroundColor='green'
+        }
+        document.getElementById('red').onclick=function(){
+            box.style.backgroundColor='red'
+        }
+        document.getElementById('blue').onclick=function(){
+            box.style.backgroundColor='blue'
+        }
+    </script>
+</body>
+</html> -->
